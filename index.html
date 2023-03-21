@@ -1,0 +1,1471 @@
+<!-- CPOYRIGHT RESERVER SO DON'T COPY THE CODE, It's a Humble Request From My Side -->
+<!-- Please Dont show that you are looser by copying the this code -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HappyNewYear2023</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Styles */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* background: rgb(207, 152, 152); */
+            background-color: beige;
+        }
+
+        #mobile {
+            width: 375px;
+            height: 100vh;
+            margin: 0 auto;
+            background: linear-gradient(45deg, #a2ecd3, #dfe772)
+        }
+
+        #stage1 {
+            width: fit-content;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            align-items: center;
+        }
+
+        .first,
+        .last {
+            font-size: 35px;
+            color: #5547cb;
+            text-shadow: 1px 3px 5px white;
+            animation: Text_Shadow_animation 15s infinite linear;
+        }
+
+        #year {
+            text-align: center;
+            text-shadow: 2px 3px 4px gray;
+            color: #47414c;
+        }
+
+        label {
+            font-size: 24px;
+            font-family: cursive;
+            color: #525283;
+        }
+
+        #Name {
+            width: 100%;
+            height: 30px;
+            margin: 7px 0 0 0;
+            font-size: 20px;
+            font-family: monospace;
+            color: brown;
+            padding: 0px 4px 0 7px;
+        }
+
+        #Naam {
+            font-size: 30px;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        button.button {
+            font-size: 20px;
+            background: lightgreen;
+            color: orangered;
+            border: 1px solid gray;
+            border-radius: 6px;
+            width: 94px;
+            height: 32px;
+            cursor: pointer;
+        }
+
+        div#alert {
+            animation: animate 3s 1 linear;
+            background: #f59494;
+            border: 1px solid red;
+            display: none;
+            padding: 2px;
+            height: 0;
+            width: 0;
+        }
+
+        p#message {
+            width: inherit;
+            height: inherit;
+            overflow: hidden;
+            font-size: 22px;
+        }
+
+        #prompt-window {
+            /* animation: animation1 1s infinite linear; */
+            width: 348px;
+            /* border: 1px dotted red; */
+            height: 183vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            padding: 0 0 0px 8px;
+            margin: auto;
+        }
+
+        .lines1 {
+            /* animation: animation1 1s infinite linear; */
+            width: 98%;
+            overflow: hidden;
+            border: 1px solid brown;
+            border-radius: 23px;
+            height: 23%;
+            background: linear-gradient(45deg, #82d57e, #dfb3b3);
+            text-align: center;
+            overflow: hidden;
+            cursor: pointer;
+            color: brown;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            box-shadow: 0px 1px 16px 6px grey;
+            margin: 0 9px 0 0px;
+            font-size: 18px;
+            /* margin: 0 auto; */
+        }
+
+        .lines1:hover {
+            box-shadow: 8px 9px 50px brown;
+        }
+
+        .fuku {
+            animation: roundout 2s 1 linear .2s;
+        }
+
+        .line3 {
+            text-align: center;
+            height: 50px;
+        }
+
+        .Line2,
+        .Line4 {
+            text-align: center;
+            padding-right: 5px;
+        }
+
+        .Line1,
+        .Line3 {
+            text-align: center;
+            padding-left: 5px;
+        }
+
+        .ltext {
+            animation: text_animation 2s infinite linear;
+
+        }
+
+        #Naam,
+        #dear,
+        #greet {
+            /* width: 100%; */
+            text-align: start;
+            text-shadow: -2px 2px 8px black;
+        }
+
+        #Naam,
+        #greet {
+            animation: wishanimation 2s infinite linear;
+            /* animation: clienColorChange 2s infinite linear; */
+        }
+
+        #Naam {
+            animation: clienColorChange 2s infinite linear;
+        }
+
+        .wishing {
+            animation: roundout 2.4s 1 linear;
+            display: flex;
+            flex-direction: column;
+            align-content: space-between;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 25px;
+            padding: 0 0 0 5px;
+            height: 17%;
+        }
+
+        .footer {
+            height: 50px;
+            font-size: 18px;
+        }
+
+        /* Animations */
+
+        @keyframes wishanimation {
+            0% {
+                color: #e75757;
+                text-decoration: underline;
+                text-shadow: -2px 2px 1px rgb(105, 88, 88);
+            }
+
+            10% {
+                color: #c55b5b;
+                text-decoration: none;
+                text-shadow: -2px 2px 3px rgb(105, 88, 88);
+            }
+
+            20% {
+                color: #8a2323;
+                text-decoration: underline;
+                text-shadow: -2px 2px 5px rgb(105, 88, 88);
+            }
+
+            30% {
+                color: #520404;
+                text-decoration: none;
+                text-shadow: -2px 2px 6px rgb(105, 88, 88);
+            }
+
+            40% {
+                color: #a33604;
+                text-decoration: underline;
+                text-shadow: -2px 2px 7px rgb(105, 88, 88);
+            }
+
+            50% {
+                color: #eb3636;
+                text-decoration: none;
+                text-shadow: -2px 2px 8px rgb(105, 88, 88);
+            }
+
+            60% {
+                color: #7c3636;
+                text-decoration: underline;
+                text-shadow: -2px 2px 7px rgb(105, 88, 88);
+            }
+
+            70% {
+                color: #8f3333;
+                text-decoration: none;
+                text-shadow: -2px 2px 6px rgb(105, 88, 88);
+            }
+
+            80% {
+                color: #cc3434;
+                text-decoration: underline;
+                text-shadow: -2px 2px 5px rgb(105, 88, 88);
+            }
+
+            90% {
+                color: #c02903;
+                text-decoration: none;
+                text-shadow: -2px 2px 3px rgb(105, 88, 88);
+            }
+
+            100% {
+                color: #ff0000;
+                text-decoration: underline;
+                text-shadow: -2px 2px 1px rgb(105, 88, 88);
+            }
+
+
+        }
+
+        @keyframes roundout {
+            0% {
+                width: 0;
+                transform: rotateZ(0deg);
+                border: 2px solid red;
+                height: 0;
+            }
+
+            10% {
+                width: 6;
+                transform: rotateZ(72deg);
+                border: 1px solid rgb(0, 0, 0);
+                height: 0;
+            }
+
+            20% {
+                width: 11%;
+                transform: rotateZ(144deg);
+                border: 2px solid rgb(255, 0, 0);
+                height: 0;
+            }
+
+            30% {
+                width: 22%;
+                transform: rotateZ(216deg);
+                border: 1px solid rgb(0, 0, 0);
+                height: 0;
+            }
+
+            40% {
+                width: 33%;
+                transform: rotateZ(288deg);
+                border: 2px solid red;
+                height: 0;
+            }
+
+            50% {
+                width: 44%;
+                transform: rotateZ(360deg);
+                border: 1px solid rgb(0, 0, 0);
+                height: 0;
+            }
+
+            60% {
+                width: 55%;
+                transform: rotateZ(432deg);
+                border: 2px solid red;
+                height: 0;
+            }
+
+            70% {
+                width: 66%;
+                transform: rotateZ(504deg);
+                border: 1px solid rgb(0, 0, 0);
+                height: 0;
+            }
+
+            80% {
+                width: 77%;
+                transform: rotateZ(576deg);
+                border: 2px solid red;
+                height: 10%;
+            }
+
+            90% {
+                width: 88%;
+                transform: rotateZ(648deg);
+                border: 1px solid rgb(0, 0, 0);
+                height: 15%;
+            }
+
+            100% {
+                width: 98%;
+                transform: rotateZ(720deg);
+                border: 2px solid red;
+                height: 18%;
+            }
+        }
+
+        @keyframes animate {
+            0% {
+                width: 0;
+                height: 0;
+                display: block;
+            }
+
+            30% {
+                width: 340px;
+                height: 50px;
+                display: block;
+            }
+
+            70% {
+                width: 340px;
+                height: 50px;
+                display: block;
+            }
+
+            100% {
+                width: 0;
+                height: 0;
+                display: block;
+            }
+        }
+
+        @keyframes animation1 {
+
+            0% {
+                background: linear-gradient(0deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            1% {
+                background: linear-gradient(3.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            2% {
+                background: linear-gradient(7.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            3% {
+                background: linear-gradient(10.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            4% {
+                background: linear-gradient(14.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            5% {
+                background: linear-gradient(18deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            6% {
+                background: linear-gradient(21.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            7% {
+                background: linear-gradient(25.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            8% {
+                background: linear-gradient(28.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            9% {
+                background: linear-gradient(32.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            10% {
+                background: linear-gradient(36deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            11% {
+                background: linear-gradient(39.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            12% {
+                background: linear-gradient(43.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            13% {
+                background: linear-gradient(46.800000000000004deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            14% {
+                background: linear-gradient(50.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            15% {
+                background: linear-gradient(54deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            16% {
+                background: linear-gradient(57.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            17% {
+                background: linear-gradient(61.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            18% {
+                background: linear-gradient(64.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            19% {
+                background: linear-gradient(68.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            20% {
+                background: linear-gradient(72deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            21% {
+                background: linear-gradient(75.60000000000001deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            22% {
+                background: linear-gradient(79.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            23% {
+                background: linear-gradient(82.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            24% {
+                background: linear-gradient(86.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            25% {
+                background: linear-gradient(90deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            26% {
+                background: linear-gradient(93.60000000000001deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            27% {
+                background: linear-gradient(97.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            28% {
+                background: linear-gradient(100.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            29% {
+                background: linear-gradient(104.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            30% {
+                background: linear-gradient(108deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            31% {
+                background: linear-gradient(111.60000000000001deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            32% {
+                background: linear-gradient(115.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            33% {
+                background: linear-gradient(118.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            34% {
+                background: linear-gradient(122.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            35% {
+                background: linear-gradient(126deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            36% {
+                background: linear-gradient(129.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            37% {
+                background: linear-gradient(133.20000000000002deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            38% {
+                background: linear-gradient(136.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            39% {
+                background: linear-gradient(140.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            40% {
+                background: linear-gradient(144deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            41% {
+                background: linear-gradient(147.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            42% {
+                background: linear-gradient(151.20000000000002deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            43% {
+                background: linear-gradient(154.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            44% {
+                background: linear-gradient(158.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            45% {
+                background: linear-gradient(162deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            46% {
+                background: linear-gradient(165.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            47% {
+                background: linear-gradient(169.20000000000002deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            48% {
+                background: linear-gradient(172.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            49% {
+                background: linear-gradient(176.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            50% {
+                background: linear-gradient(180deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            51% {
+                background: linear-gradient(183.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            52% {
+                background: linear-gradient(187.20000000000002deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            53% {
+                background: linear-gradient(190.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            54% {
+                background: linear-gradient(194.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            55% {
+                background: linear-gradient(198deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            56% {
+                background: linear-gradient(201.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            57% {
+                background: linear-gradient(205.20000000000002deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            58% {
+                background: linear-gradient(208.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            59% {
+                background: linear-gradient(212.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            60% {
+                background: linear-gradient(216deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            61% {
+                background: linear-gradient(219.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            62% {
+                background: linear-gradient(223.20000000000002deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            63% {
+                background: linear-gradient(226.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            64% {
+                background: linear-gradient(230.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            65% {
+                background: linear-gradient(234deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            66% {
+                background: linear-gradient(237.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            67% {
+                background: linear-gradient(241.20000000000002deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            68% {
+                background: linear-gradient(244.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            69% {
+                background: linear-gradient(248.4deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            70% {
+                background: linear-gradient(252deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            71% {
+                background: linear-gradient(255.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            72% {
+                background: linear-gradient(259.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            73% {
+                background: linear-gradient(262.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            74% {
+                background: linear-gradient(266.40000000000003deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            75% {
+                background: linear-gradient(270deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            76% {
+                background: linear-gradient(273.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            77% {
+                background: linear-gradient(277.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            78% {
+                background: linear-gradient(280.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            79% {
+                background: linear-gradient(284.40000000000003deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            80% {
+                background: linear-gradient(288deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            81% {
+                background: linear-gradient(291.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            82% {
+                background: linear-gradient(295.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            83% {
+                background: linear-gradient(298.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            84% {
+                background: linear-gradient(302.40000000000003deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            85% {
+                background: linear-gradient(306deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            86% {
+                background: linear-gradient(309.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            87% {
+                background: linear-gradient(313.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            88% {
+                background: linear-gradient(316.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            89% {
+                background: linear-gradient(320.40000000000003deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            90% {
+                background: linear-gradient(324deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            91% {
+                background: linear-gradient(327.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            92% {
+                background: linear-gradient(331.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            93% {
+                background: linear-gradient(334.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            94% {
+                background: linear-gradient(338.40000000000003deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            95% {
+                background: linear-gradient(342deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            96% {
+                background: linear-gradient(345.6deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            97% {
+                background: linear-gradient(349.2deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            98% {
+                background: linear-gradient(352.8deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            99% {
+                background: linear-gradient(356.40000000000003deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+            100% {
+                background: linear-gradient(360deg, #f8ff928c, #ddf0769c, #c5eb6c9c);
+            }
+
+
+        }
+
+        @keyframes text_animation {
+            0% {
+                color: #ff9999;
+                font-size: 16px;
+            }
+
+            10% {
+                color: #ffb066;
+                font-size: 17px;
+            }
+
+            20% {
+                color: #fff34f;
+                font-size: 18px;
+            }
+
+            30% {
+                color: #6aa112;
+                font-size: 19px;
+            }
+
+            40% {
+                color: #cc00ff;
+                font-size: 20px;
+            }
+
+            50% {
+                color: #7192ff;
+                font-size: 21px;
+            }
+
+            60% {
+                color: #000000;
+                font-size: 20px;
+            }
+
+            70% {
+                color: #ff5e00;
+                font-size: 19px;
+            }
+
+            80% {
+                color: #383bff;
+                font-size: 18px;
+            }
+
+            90% {
+                color: #a217ff;
+                font-size: 17px;
+            }
+
+            100% {
+                color: #ff38e4;
+                font-size: 16px;
+            }
+
+
+        }
+
+        @keyframes Text_Shadow_animation {
+            0% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            1% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            2% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            3% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            4% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            5% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            6% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            7% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            8% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            9% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            10% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            11% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            12% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            13% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            14% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            15% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            16% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            17% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            18% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            19% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            20% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            21% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            22% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            23% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            24% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            25% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            26% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            27% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            28% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            29% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            30% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            31% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            32% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            33% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            34% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            35% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            36% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            37% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            38% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            39% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            40% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            41% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            42% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            43% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            44% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            45% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            46% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            47% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            48% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            49% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            50% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            51% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            52% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            53% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            54% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            55% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            56% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            57% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            58% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            59% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            60% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            61% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            62% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            63% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            64% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            65% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            66% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            67% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            68% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            69% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            70% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            71% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            72% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            73% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            74% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            75% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            76% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            77% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            78% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            79% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            80% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            81% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            82% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            83% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            84% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            85% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            86% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            87% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            88% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            89% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            90% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            91% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            92% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            93% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            94% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            95% {
+                text-shadow: 1px 3px 5px red;
+            }
+
+            96% {
+                text-shadow: 3px 5px 7px green;
+            }
+
+            97% {
+                text-shadow: 5px 7px 9px purple;
+            }
+
+            98% {
+                text-shadow: 7px 9px 1px blue;
+            }
+
+            99% {
+                text-shadow: 9px 1px 3px orange;
+            }
+
+            100% {
+                text-shadow: 1px 3px 5px orange;
+            }
+        }
+
+        @keyframes clienColorChange {
+            0% {
+                color: #ff0000;
+            }
+
+            10% {
+                color: #ff5100;
+            }
+
+            20% {
+                color: #ffbb00;
+            }
+
+            30% {
+                color: #7bff00;
+            }
+
+            40% {
+                color: #00ff22;
+            }
+
+            50% {
+                color: #00ff95;
+            }
+
+            60% {
+                color: #0077ff;
+            }
+
+            70% {
+                color: #0400ff;
+            }
+
+            80% {
+                color: #ba3de0;
+            }
+
+            90% {
+                color: #ff0080;
+            }
+
+            100% {
+                color: #000000;
+            }
+
+        }
+
+        /* Media Querry */
+
+        @media only screen and (min-width:470px){
+        body{
+        display: none;
+    }
+        }    
+
+
+        @media only screen and (max-width:240px) {
+            #mobile {
+                height: 157vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mobile">
+        <div id="stage1">
+            <div class="first">
+                <p>Happy New Year</p>
+                <p id="year" class="first">2023</p>
+            </div>
+
+            <div id="prompt-window">
+
+                <div class="name">
+                    <label for="Name">Please write your name here</label>
+                    <input type="search" name="Name" id="Name" autocapitalize="true"><br>
+                    <button class="button" id="ClickMe"> Click Me</button>
+                </div>
+                <div id="alert">
+                    <p id="message">
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="last">
+                <p id="year" class="first">2023</p>
+                <p>Happy New Year</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        ClickBtn = document.getElementById("ClickMe")
+        Nam = document.getElementById("Name");
+        ClickBtn.addEventListener("click", (e) => {
+            if (Nam.value.length == 0) {
+                message = "Name Can't be Empty\nplease write your correct Name"
+                document.getElementById("message").innerText = message
+                document.getElementById('alert').style.display = 'block'
+                setTimeout(() => {
+                    document.getElementById('alert').style.display = 'none'
+                }, 2910);
+            }
+            else if (Nam.value.length > 25) {
+                message = "Name may not have more then 30 character\nplease write your correct Name"
+                document.getElementById("message").innerText = message
+                document.getElementById('alert').style.display = 'block'
+                setTimeout(() => {
+                    document.getElementById('alert').style.display = 'none'
+                }, 2910);
+            }
+            else if (Nam.value.length < 5) {
+                message = "Name is too short\nplease write your correct Name"
+                document.getElementById("message").innerText = message
+                document.getElementById('alert').style.display = 'block'
+                setTimeout(() => {
+                    document.getElementById('alert').style.display = 'none'
+                }, 2910);
+            }
+            else {
+                // regex = /'([a-zA-z]{5,30})'/
+                regex = (/^[A-Za-z\s]+$/)
+                Naam = Nam.value
+                matching = regex.test(Naam)
+                if (matching == true) {
+                    // message = "Success"
+                    // document.getElementById("mobile").style.display="none"
+                    document.getElementById("mobile").style.height = "200vh"
+                    document.getElementById("prompt-window").style.height = "183vh"
+                    document.getElementById("mobile").innerHTML = boddy
+                    document.getElementById('Naam').innerText = Naam
+
+                }
+                else {
+                    message = "Please write your name correctly"
+                    document.getElementById("message").innerText = message
+                    document.getElementById('alert').style.display = 'block'
+                    setTimeout(() => {
+                        document.getElementById('alert').style.display = 'none'
+                    }, 2910);
+                }
+            }
+            // alert(message)
+
+        });
+
+    </script>
+    <script>
+        boddy = `<div class="line3">
+<p class="ltext">Happy New Year</p>
+<p class="ltext">2023</p>
+</div>
+
+<div id="prompt-window">
+
+<div class="lines1 wishing">
+    <div id="greet">Raajesh is wishing you and your Family  &nbsp; a <br><br> Happy New Year 2023</div>
+    <div id="dear">Dear... <p id="Naam">Raajesh</p>
+    </div>
+
+</div>
+<div class="lines1">
+    <div class="Line1">भुला कर सारे दुःख भरे पल,
+    </div>
+    <div class="Line2"> दिल में बसा लो आने वाले कल को ।
+    </div>
+    <div class="Line3">मुस्कुराओ खुल कर चाहे जो भी हो पल,
+    </div>
+    <div class="Line4">क्युकी आ रहा हैं नया साल लेकर खुशियों के पल ।
+    </div>
+</div>
+
+<div class="lines1">
+    <div class="Line1">It's a fresh start. ... 
+    </div>
+    <div class="Line2">On this New Year, I wish my best friend lots of joy!
+    </div>
+    <div class="Line3">2022 has been an extraordinary year and I am so grateful
+    </div>
+    <div class="Line4">for your wonderful friendship. ... <br>
+    Cheers to new beginnings
+    </div>
+</div>
+
+<div class="lines1">
+    <div class="Line1">शाखों पर सजता नये पत्तों का श्रृंगार,
+    </div>
+    <div class="Line2">मीठे पकवानों की होती चारो तरफ बहार।
+    </div>
+    <div class="Line3">मीठी बोली से करते, सब एक दूजे का दीदार
+    </div>
+    <div class="Line4">खुशियों के साथ चलो मनाये नव वर्ष इस बार।
+    </div>
+</div>
+
+<div class="lines1 footer">
+    <div class="line1">Wishing you a happy New year ones again</div>
+</div>
+
+</div>
+
+<div class="line3">
+<p class="ltext">2023</p>
+<p class="ltext">Happy New Year</p>
+</div>`
+    </script>
+</body>
+
+</html>
